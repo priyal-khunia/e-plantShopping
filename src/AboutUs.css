@@ -1,33 +1,43 @@
-.about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
-    text-align: justify;
-  }
-  
-  .about-us-heading {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-description {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .about-us-content {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  .plant_logo_right{
-    text-align: right;
-  }
+.aboutus-card {
+  background: rgba(246, 243, 234, 0.06);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(246, 243, 234, 0.22);
+  border-radius: 10px;
+  padding: 32px 34px;
+  max-width: 380px;
+  color: var(--cream);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
 
-  .plant_logo_left{
-    text-align: left;
-  }
+.aboutus-card h2 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.aboutus-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(246, 243, 234, 0.82);
+}
+
+.aboutus-more {
+  margin-top: 14px;
+}
+
+.aboutus-toggle {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--ochre);
+  color: var(--ochre);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 0 3px 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.aboutus-toggle:hover {
+  color: var(--cream);
+  border-bottom-color: var(--cream);
+}
