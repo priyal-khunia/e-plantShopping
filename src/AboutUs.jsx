@@ -1,61 +1,23 @@
-import React, { useState } from 'react';
-import ProductList from './ProductList';
-import './App.css';
-import AboutUs from './AboutUs';
+import React from 'react';
+import './AboutUs.css';
 
-function App() {
-  const [showProductList, setShowProductList] = useState(false);
-
-  const handleGetStartedClick = () => {
-    setShowProductList(true);
-  };
-
-  const handleHomeClick = () => {
-    setShowProductList(false);
-  };
-
+function AboutUs() {
   return (
-    <div className="app-container">
-      <div className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
-        <div className="background-image"></div>
-        <div className="content">
-          <div className="landing_content">
-            <span className="eyebrow">Est. Greenhouse Grown</span>
-            <h1>Welcome To Paradise Nursery</h1>
-            <div className="divider"></div>
-            <p>Where Green Meets Serenity</p>
-            <p className="landing_subtext">
-              Bring home thoughtfully grown houseplants that clean your air,
-              calm your space, and thrive with almost no fuss.
-            </p>
-            <button className="get-started-button" onClick={handleGetStartedClick}>
-              Get Started
-            </button>
-            <div className="stats-row">
-              <div className="stat-item">
-                <span className="stat-number">30+</span>
-                <span className="stat-label">Plant Varieties</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">100%</span>
-                <span className="stat-label">Hand Potted</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">5★</span>
-                <span className="stat-label">Care Rated</span>
-              </div>
-            </div>
-          </div>
-          <div className="aboutus_container">
-            <AboutUs />
-          </div>
-        </div>
-      </div>
-      <div className={`product-list-container ${showProductList ? 'visible' : ''}`}>
-        <ProductList onHomeClick={handleHomeClick} />
-      </div>
+    <div className="about-us-container">
+      <p className="about-us-description">
+        Welcome to Paradise Nursery, where green meets serenity!
+      </p>
+      <p className="about-us-content">
+        At Paradise Nursery, we are passionate about bringing nature closer to you. Our mission is to provide a wide range of high-quality plants that enhance the beauty of your surroundings while contributing to a healthier and more sustainable lifestyle.
+      </p>
+      <p className="about-us-content">
+        Our collection includes air-purifying, aromatic, insect-repellent, medicinal, and low-maintenance plants. Whether you are an experienced gardener or just starting your green journey, we are here to help you find the perfect plant for your home or office.
+      </p>
+      <p className="about-us-content">
+        Join us in creating greener, healthier spaces. Explore Paradise Nursery and bring the beauty of nature to your doorstep.
+      </p>
     </div>
   );
 }
 
-export default App;
+export default AboutUs;
